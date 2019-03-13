@@ -10,8 +10,8 @@
 'use strict';
 
 (function (global, factory) {
-	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('wp-includes/js/dist/vendor/react')) :
-	typeof define === 'function' && define.amd ? define(['wp-includes/js/dist/vendor/react'], factory) :
+	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('react')) :
+	typeof define === 'function' && define.amd ? define(['react'], factory) :
 	(global.ReactDOM = factory(global.React));
 }(this, (function (React) { 'use strict';
 

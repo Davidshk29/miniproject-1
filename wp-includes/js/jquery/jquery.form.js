@@ -14,7 +14,7 @@
 (function (factory) {
 	if (typeof define === 'function' && define.amd) {
 		// AMD. Register as an anonymous module.
-		define(['wp-includes/js/jquery/jquery'], factory);
+		define(['jquery'], factory);
 	} else if (typeof module === 'object' && module.exports) {
 		// Node/CommonJS
 		module.exports = function( root, jQuery ) {
@@ -22,10 +22,10 @@
 				// require('jQuery') returns a factory that requires window to build a jQuery instance, we normalize how we use modules
 				// that require this pattern but the window provided is a noop if it's defined (how jquery works)
 				if (typeof window !== 'undefined') {
-					jQuery = require('wp-includes/js/jquery/jquery');
+					jQuery = require('jquery');
 				}
 				else {
-					jQuery = require('wp-includes/js/jquery/jquery')(root);
+					jQuery = require('jquery')(root);
 				}
 			}
 			factory(jQuery);
