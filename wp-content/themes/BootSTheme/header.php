@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Bootstrap WordPress Theme</title>
+    <title><?php wp_title(); ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -16,3 +16,8 @@
             <span class = "icon-bar"></span>
             <span class = "icon-bar"></span>
         </button>
+
+        <php
+            echo get_stylesheet_uri();
+            wp_head();
+        ?>
