@@ -1,7 +1,8 @@
+<?php wp_footer(); ?>
 <div class = "navbar navbar-default navbar-fixed-bottom">
 
     <div class = "container">
-        <p class = "navbar-text pull-left">Site Built By Ahsan</p>
+        <p class = "navbar-text pull-left">A Wordpress Site</p>
         <a href = "http://youtube.com/" class = "navbar-btn btn-danger btn pull-right">Subscribe on YouTube</a>
     </div>
 
@@ -59,12 +60,8 @@
     </div>
 </div>
 
-<?php wp_footer(); ?>
-
 <script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="../wp-content/themes/BootSTheme/js/bootstrap.js"></script>
-
-
+<script src="../wp-content/themes/BootSTheme/js/bootstrap.min.js"></script>
 
 </body>
 </html>
